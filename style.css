@@ -1,0 +1,27 @@
+.div1 {
+    display: flex;
+    gap: 60px;
+    align-items: center; 
+    justify-content: center; 
+}
+.div2 {
+    display: flex;
+    gap: 20px; /* Space between the images */
+    justify-content: center;
+    align-items: center;
+}
+
+.div2 div img {
+    width: 100px; /* Set the width of the images */
+    height: 100px; /* Keep the aspect ratio */
+    transition: transform 0.9s ease, opacity 0.9s ease; /* Smooth transition on click */
+    cursor: pointer; /* Show pointer on hover to indicate interactivity */
+}
+
+/* Add a click effect using the :active pseudo-class */
+.div2 div img:hover {
+    transform: scale(1.2); /* Scale the image on click */
+    opacity: 1.9s; /* Lower opacity on click */
+    width: 200px; /* Set the width of the images */
+    height: 200px;
+}
