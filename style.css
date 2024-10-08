@@ -1,27 +1,38 @@
+body{
+    background-image: url(https://images.pexels.com/photos/2514035/pexels-photo-2514035.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-size:cover;
+ 
+}
 .div1 {
     display: flex;
     gap: 60px;
-    align-items: center; 
     justify-content: center; 
 }
+
 .div2 {
-    display: flex;
-    gap: 20px; /* Space between the images */
+    display:flex;
+    gap: 40px;
     justify-content: center;
-    align-items: center;
+
 }
 
-.div2 div img {
-    width: 100px; /* Set the width of the images */
-    height: 100px; /* Keep the aspect ratio */
-    transition: transform 0.9s ease, opacity 0.9s ease; /* Smooth transition on click */
-    cursor: pointer; /* Show pointer on hover to indicate interactivity */
+
+img {
+    width: 70px;
+    height: 70px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 50%; 
+    transition: transform 0.6s ease, border-radius 0.6s ease, width 0.6s ease, height 0.6s ease;
+    cursor: pointer;
 }
 
-/* Add a click effect using the :active pseudo-class */
-.div2 div img:hover {
-    transform: scale(1.2); /* Scale the image on click */
-    opacity: 1.9s; /* Lower opacity on click */
-    width: 200px; /* Set the width of the images */
-    height: 200px;
+img:hover {
+    width: 210px; 
+    height: 210px; 
+    border-radius: 5%; 
+    transform: scale(1); 
 }
+
+
+
+
